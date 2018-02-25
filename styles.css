@@ -1,0 +1,94 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+/* Start your base/mobile styles here */
+
+/* html, body {
+  Sets default font-size to 16px, ensuring 1em = 16px;
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+  margin: 25px;
+} */
+
+/* .container {
+  width: 94%;
+  margin: 0 auto;
+} */
+
+h1 {
+  font-family: 'georgia', serif;
+}
+
+p {
+  font-size: 1em;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#mybutton {
+  color: white;
+  background-color: blue;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#mybutton:disabled {
+  color: green;
+  opacity: 0.5;
+}
+
+#mybutton:hover {
+  opacity: 0.7;
+  color: black;
+}
+
+.buttondiv {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+  /* .container {
+    max-width: 745px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+  } */
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: solid 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+/* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+@media(min-width: 729px) {
+  .container {
+    max-width: 745px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: solid 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
